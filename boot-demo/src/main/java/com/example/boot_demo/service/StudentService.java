@@ -5,7 +5,6 @@ import com.example.boot_demo.dto.StudentDTO;
 public interface StudentService {
      StudentDTO getStudentById(long id);
 
-
      Long adddNewStudent(StudentDTO studentDTO);
 
      void deleteStudentById(long id);

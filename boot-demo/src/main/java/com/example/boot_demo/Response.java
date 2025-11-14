@@ -1,13 +1,13 @@
 package com.example.boot_demo;
 
 public class Response <T>{
-    private T date;
+    private T data;
     private boolean success;
     private String errorMsg;
 
     public static <K> Response<K> newSuccess(K data){
         Response<K> response =new Response<>();
-        response.setDate(data);
+        response.setData(data);
         response.setSuccess(true);
         return response;
     }
@@ -26,11 +26,11 @@ public class Response <T>{
 
     public T getDate() {
 
-        return date;
+        return data;
     }
 
-    public void setDate(T date) {
-        this.date = date;
+    public void setData(T data) {
+        this.data = data;
     }
 
     public boolean isSuccess() {
